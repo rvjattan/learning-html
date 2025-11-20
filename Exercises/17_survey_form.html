@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Build a Survey Form</title>
+  </head>
+
+  <body>
+
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required />
+      <br>
+
+      <label for="email" id="email-label">Email</label>
+      <input id="email" type="email" placeholder="Enter your Email" required />
+      <br>
+
+      <label for="number" id="number-label">Age(optional)</label>
+      <input id="number" type="number" min="18" max="100" placeholder="Age" />
+      <br>
+
+      <p>
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown">
+            <option selected>Select current role</option>
+            <option>Student</option>
+            <option>Full time job</option>
+            <option>Full time learner</option>
+            <option>Other</option>
+            <option>Prefer not to say</option>
+        </select>
+      </p>
+      
+
+      <p>
+        <label>Would you recommend our Bootcamp to a friend?</label>
+        <input type="radio" name="radio-button" value="Definitely" checked />
+        <label id="radio-button">Definitely</label>
+        <input type="radio" name="radio-button" value="maybe" />
+        <label id="radio-button">Maybe</label>
+        <input type="radio" name="radio-button" value="not-sure" />
+        <label id="radio-button">Not Sure</label>
+        <br>
+      </p>
+
+      <p>
+        <label>What would you like to see improved? (Check all that apply)</label>
+        <input type="checkbox" value="Front-end-project" />
+        <label for="Bike">Front End Project</label>
+
+        <input type="checkbox" value="backend" />
+        <label for="Bike">Backend</label>
+
+        <input type="checkbox" value="data-visualisation" />
+        <label for="Bike">Data Visualisation</label>
+
+        <input type="checkbox" value="challenges" />
+        <label for="Bike">challenges</label>
+
+        <input type="checkbox" value="open-source-community" />
+        <label for="Bike">Open Source Community</label>
+
+        <input type="checkbox" value="gitter-help-rooms" />
+        <label for="Bike">Gitter Help Rooms</label>
+
+        <input type="checkbox" value="videos" />
+        <label for="Bike">Videos</label>
+
+        <input type="checkbox" value="wiki" />
+        <label for="Bike">Wiki</label>
+      </p>
+      
+      <p>
+        <label>Any comments or suggestions?</label>
+        <textarea placeholder="Enter here your comments"></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </p>
+    </form>
+  </body>
+</html>
